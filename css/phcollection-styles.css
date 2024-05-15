@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a:link {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:visited{
+    color: lightcyan;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+
+a:active {
+    color: lightyellow;
+    text-decoration: none;
+}
+
+/* NAVBAR STYLING */
+nav {
+    background-color: black;
+    padding: 30px;
+
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    
+    height: auto;
+    width: 100%;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav button {
+    display: block;
+    padding: 5px;
+    background-color: #DEE4EA;
+    color: black;
+}
+
+/* BODY STYLING */
+body {
+    background-color: #28282B;
+}
+
+#welcome-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 25px;
+    margin: 25px;
+    margin-bottom: 25px;
+    margin-top: 100px;
+
+    background-color: hsla(240, 7%, 8%, 0.404);   
+}
+
+#welcomeTitle {
+    margin-bottom: 15px; 
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.welcomeText {
+    color: lightgrey;
+    font-size: 25px;
+}
+
+.site-content {
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+
+    margin-left: 10px;
+}
+
+.mix-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    width: 35%;
+
+    margin-right: 15px;
+    margin-left: 25px;
+    margin-bottom: 75px;
+
+}
+
+/* UNDER CONSTRUCTION (PH-Collection) */
+#welcomeText {
+    color: aliceblue;
+    font-size: 15px;
+}
+
+#cover {
+    position: inherit;
+    height: auto;
+    width: 300px;
+}
+
+/* LIGHT MODE STYLES */
+.light-mode {
+    background-color: #DEE4EA;
+}
+
+.light-mode #welcomeTitle {
+    color: black;
+}
+
+.light-mode nav {
+    background-color: gray;
+}
+
+.light-mode nav a {
+    color: black;
+}
+
+.light-mode nav button {
+    background-color: #28282B;
+    color: aliceblue;
+}
+
+

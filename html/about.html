@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="/icons/phantomdannyyy.png">
+    <link rel="stylesheet" href="/css/about-styles.css">
+</head>
+<!-- this html file is a short little snippet about the website.
+    I used this page to implement the form that was required by giving users
+    a chance to guess how many playlists I have-->
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <ul class="navbar-items">
+                <li><a href="phantom-mixes.html">PHANTOM'S MIXES</a></li>
+                <li><a href="phantom-collection.html">PHANTOM'S COLLECTION</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <button id="toggler" type="button" onclick="themeToggle()">LIGHT</button>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="welcome-content">
+        <h1 id="welcomeTitle">About</h1>
+    </div>
+
+    <div class="site-content">
+        <p id="aboutText">I started making playlists since the COVID-19 lockdown in 2020. <br>
+            I made over 300 playlists in 2020 alone. While I couldn't fit all of my playlists here, <br>
+            I tried to focus on the ones that I thought were my 'best' from each year/mix.
+        </p>
+        <form>
+            <label id="question">How many playlists do you think I've made?</label><br>
+            <input type="text" id="answer"><br>
+            <button id="submit" onclick="submitAnswer()">feeling lucky!</button>
+        </form>
+        
+    </div>
+    <p id=""></p>
+    <script src="/script.js"></script>
+</body>
+</html>

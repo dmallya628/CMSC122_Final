@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a:link {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:visited{
+    color: lightcyan;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+
+a:active {
+    color: lightyellow;
+    text-decoration: none;
+}
+
+/* NAVBAR STYLING */
+
+nav {
+    background-color: black;
+    padding: 30px;
+
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    
+    height: auto;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav button {
+    display: block;
+    padding: 5px;
+    background-color: #DEE4EA;
+    color: black;
+}
+
+/* BODY STYLING */
+body {
+    background-color: #28282B;
+}
+
+#welcome-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 25px;
+    margin: 25px;
+    margin-bottom: 25px;
+    margin-top: 100px;
+}
+
+#welcomeTitle {
+    margin-bottom: 15px; 
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.site-content {
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+
+    margin-left: 10px;
+
+}
+
+.mix-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    width: 35%;
+
+    margin-right: 15px;
+    margin-left: 25px;
+    margin-bottom: 75px;
+
+}
+
+.cover {
+    position: inherit;
+    height: auto;
+    width: 100%;
+
+    opacity: 1.0;
+
+}
+
+.description {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    top: 50%;
+    bottom: 50%;
+
+    visibility: visible;
+    opacity: 0;
+
+    background-color: rgba (248, 247, 216, 0.7);
+
+    transition: opacity .2s, visibility .2s;
+
+}
+
+.description h2 {
+    font-size: 30px;
+}
+
+.description h3 {
+   margin-top: 15px;
+   margin-bottom: 15px;
+   font-size: 30px;
+}
+
+.mix-description {
+    color: lightgray;
+}
+
+/* OPACITY TRANSITION STYLING */
+.mix-container:hover .description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mix-container:hover .cover {
+    opacity: 0.6;
+}
+
+/* LIGHT MODE STYLES */
+.light-mode {
+    background-color: #DEE4EA;
+}
+
+.light-mode #welcomeTitle {
+    color: black;
+}
+
+.light-mode .mix-description {
+    color: black;
+}
+
+.light-mode nav {
+    background-color: gray;
+}
+
+.light-mode nav a {
+    color: black;
+}
+
+.light-mode nav button {
+    background-color: #28282B;
+    color: aliceblue;
+}
+
+
+
+
